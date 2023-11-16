@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>МагазинИгр</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/itc-slider.css">
+  <link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<body>
+  <header>
+    <div class="timer">
+      <div class="timer__items">
+        <div class="timer__item timer__days"></div>
+        <div class="timer__item timer__hours">00</div>
+        <div class="timer__item timer__minutes">00</div>
+        <div class="timer__item timer__seconds">00</div>
+      </div>
+    </div>
+    <div class="container header__wrap">
+      <div class="logo">
+        <img class="logo__img" src="img/logo.png" onclick="transition_menu()" alt="">
+        <div class="logo__menu">
+          <ul class="logo__list">
+            <li class="logo__item">
+              <h5 class="logo__text-style">Minecraft</h5>
+            </li>
+            <li class="logo__item">
+              <img class="logo__theme-pic_light" src="img/icons8-солнце-60.png" onclick="light_theme()" alt="">
+            </li>
+            <li class="logo__item">
+              <img src="img/icons8-символ-луны-60.png" onclick="dark_theme()" alt="" class="logo__theme-pic_dark">
+            </li>
+          </ul>
+        </div>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="#" class="header__link">
+              Главная
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">
+              Продукты
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">
+              Поддержка
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">
+              Новости
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">
+              Купить
+            </a>
+          </li>
+        </ul>
+        <span id="time">
+
+        </span>
+        <div class="burger" onclick="transition_burger()">
+          <div class="burger__line"></div>
+          <div class="burger__line"></div>
+          <div class="burger__line"></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="video-bg">
+      <video id="video_minecraft" autoplay muted loop>
+        <source src="video/MINECRAFT — RUNAWAY [4K_60FPS].mp4" type="video/mp4">
+      </video>
+      <div class="effect"></div>
+      <div class="video-bg__content">
+        <section class="product">
+
+          <div class="container">
+            <h1 class="name">Minecraft</h1>
+            <div class="product__content">
+              <div class="itc-slider" data-slider="itc-slider">
+                <div class="itc-slider-wrapper">
+                  <div class="itc-slider-items">
+                    <div class="itc-slider-item">
+                      <img class="imgft" src="img/1644997297_10-abrakadabra-fun-p-oboi-dlya-kompyutera-mainkraft-11.jpg"
+                        alt="">
+                    </div>
+                    <div class="itc-slider-item">
+                      <img src="img/images.jpg" alt="" class="imgft">
+                    </div>
+                    <div class="itc-slider-item">
+                      <img src="img/images (1).jpg" alt="" class="imgft">
+                    </div>
+                  </div>
+                </div>
+                <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+                <button class="itc-slider-btn itc-slider-btn-prev"></button>
+                <button class="itc-slider-btn itc-slider-btn-next"></button>
+              </div>
+              <p class="discription"> (Minecraft) - это компьютерная инди-игра про выживание в открытом мире,
+                который
+                процедурно генерируется из блоков. В игре можно крафтить и сражаться с врагами. Можно играть с друзьями
+                по
+                сети.
+                Игра от компании Mogang, позже купленная Майкрософт. Созданная в 2004 году.</p>
+            </div>
+            <h6 class="cost">1250p</h6>
+            <button class="buy_btn" id="print_btn" onclick="transition_btn()">
+              купить игру
+            </button>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="time">
+      <div class="container">
+
+      </div>
+    </section>
+    <section class="bag">
+      <div class="bag__content">
+        <button class="btn__bag">
+          <img src="img/icons8-корзина-96.png" alt="">
+        </button>
+        <h6 class="cost__bag">0</h6>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer__cont">
+        <div class="footer__social">
+          <img src="img/icons8-vk-50 (1).png" alt="" class="logo__footer">
+          <img src="img/icons8-youtube-play-50.png" alt="" class="logo__footer">
+          <img src="img/icons8-тикток-50.png" alt="" class="logo__footer">
+        </div>
+        <div class="footer__lists">
+          <nav class="footer__lst">
+            <ul class="lists__fr">
+              <li class="dsfsf">
+                <a href="d" class="footer1">
+                  Продукт
+                </a>
+              <li class="dsfsf">
+                <a href="d" class="footer1">
+                  Продукт
+                </a>
+              <li class="dsfsf">
+                <a href="d" class="footer1">
+                  Продукт
+                </a>
+              <li class="dsfsf">
+                <a href="d" class="footer1">
+                  Продукт
+                </a>
+              <li class="dsfsf">
+                <a href="d" class="footer1">
+                  Продукт
+                </a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="java fails/buy_btn.js"></script>
+  <script src="java fails/itc-slider.js"></script>
+  <script src="java fails/main.js"></script>
+  <script src="java fails/ggsdgd.js"></script>
+  <script src="java fails/burger_btn.js"></script>
+  <script src="java fails/time.js"></script>
+  <script src="java fails/timer.js"></script>
+</body>
+
+</html>
